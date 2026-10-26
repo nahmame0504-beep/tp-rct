@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# TP 5 : Gestion de l'état et structuration des composants React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet a été réalisé dans le cadre du TP 5 pour apprendre la gestion de l'état (state), la communication entre composants et l'utilisation de la Context API dans React.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Objectifs du TP
 
-### `npm start`
+- Manipuler des **formulaires contrôlés** (`useState`) et **non-contrôlés** (`useRef`).
+- Transmettre des données du composant enfant vers le composant parent (**Lifting State Up**).
+- Gérer un état global partagé sans prop-drilling grâce à **React Context API** (`createContext`, `useContext`).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##  Structure du projet
 
-### `npm test`
+```text
+tp-react-debutant/
+├── src/
+│   ├── App.js                      # Composant principal englobant le Provider
+│   ├── FormulaireControle.js       # Formulaire contrôlé (useState)
+│   ├── FormulaireNonControle.js    # Formulaire non-contrôlé (useRef)
+│   ├── FormulaireInscription.js    # Formulaire d'inscription avec state complexe (Exercice 1)
+│   ├── TemperatureConvertor.js     # Composant parent du convertisseur (Exercice 2)
+│   ├── TemperatureInput.js         # Composant enfant réutilisable pour la température
+│   ├── UtilisateurContext.js       # Création du contexte utilisateur (Context API)
+│   ├── Profil.js                   # Composant consommant le contexte (Exercice 3)
+│   └── index.js                    # Point d'entrée React
+├── package.json
+└── README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1176" height="841" alt="image" src="https://github.com/user-attachments/assets/ba8ffff2-271a-4426-bdaa-8824b748de30" />
+<img width="1273" hei<img width="1436" height="385" alt="image" src="https://github.com/user-attachments/assets/144cc0a2-006e-426f-a5e7-ad5c3bd42c50" />
+<img width="1436" height="385" alt="image" src="https://github.com/user-attachments/assets/f8b43cc4-d8d2-47ab-a981-1a57c29b1682" />
+<img width="799" height="201" alt="image" src="https://github.com/user-attachments/assets/f4e947b9-4285-46ba-a1c4-f669b15f219e" />
+<img width="1426" height="509" alt="image" src="https://github.com/user-attachments/assets/1ea06800-b695-4d2b-a275-e2ed6430dde6" />
+<img width="1083" height="238" alt="image" src="https://github.com/user-attachments/assets/8d2ddf53-2ee3-4415-a19b-de8d3324d373" />
+<img width="762" height="203" alt="image" src="https://github.com/user-attachments/assets/5f3386b8-65fd-4748-b8af-a9f61a183faf" />
